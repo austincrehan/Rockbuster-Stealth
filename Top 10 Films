@@ -1,4 +1,4 @@
-Used to find the Top 10 films by name, rating and genre
+SQL query to find the Top 10 films by name, rating and genre
 
 SELECT a.title, f.name, a.rating, SUM (d.amount) AS total_amount,  COUNT (DISTINCT(c.rental_id)) AS count_of_rentals
 FROM film A
