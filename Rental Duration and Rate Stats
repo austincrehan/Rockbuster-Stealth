@@ -1,0 +1,10 @@
+SQL query to display stats regarding rental duration and rate
+
+SELECT MIN (rental_duration) AS min_rent_duration,
+       MAX (rental_duration) AS max_rent_duration,
+       AVG (rental_duration) AS avg_rent_duration,
+       MIN (rental_rate) AS min_rent,
+       MAX (rental_rate) AS max_rent,
+       AVG (rental_rate) AS avg_rent,
+       COUNT(*) AS count_rows
+FROM film;
